@@ -20,7 +20,7 @@ class income(models.Model):
     amount = models.BigIntegerField()
     user = models.ForeignKey(User,on_delete=models.DO_NOTHING)
     def __unicode__(self):
-        return "{}-{}".format(self.date , self.amount)
+        return self.text
 
 
 
