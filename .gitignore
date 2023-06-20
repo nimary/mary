@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 db.sqlite3
+=======
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+>>>>>>> 0499ed0f2c8ae6be7a5e1e01e1900b6528de19e7
