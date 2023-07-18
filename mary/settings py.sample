@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,7 +25,7 @@ SECRET_KEY = "django-insecure-cej12yfsy&kr*=bu9p$0htiw#6ptf)ae#o8z0%giy=h0@0e434
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mary.ir', '10.10.50.51']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -39,7 +38,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "web" ,
-    "captcha",
 ]
 
 MIDDLEWARE = [
@@ -124,12 +122,6 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField" 
-site_key = '6Ldx0SUnAAAAAGU_Ob1_1xc9QhrcSHmB4NEI_LgQ'
-RECAPTCHA_SECRET_KEY = '6Ldx0SUnAAAAAMdVMS4BMkBhGWGNpYxQbRaKxGCT'
 
-
-RECAPTCHA_SECRET_KEY1 ='6LcYOyUnAAAAAIhrGUAEr_wHTlP6pvnNkxGvkaW6'
-POSTMARK_API_TOKEN='d1864b33-1681-4512-848d-7808137fa3cc'
-RECAPTCHA_PUBLIC_KEY ='6LcYOyUnAAAAABIDVwjhk5bK7h4skVgeWqk5USFa'
-RECAPTCHA_PRIVATE_KEY ='6LeMBvQmAAAAADIo-noI5E8GFpHJ92UW-HO8vz1L'
-SILENCED_SYSTEM_CHECKS = ['captcha.recaptcha_test_key_error']
+site-key=6LeMBvQmAAAAAKIRYXnE9CZ29YWKcYVmm0y0m1D8
+ 6LeMBvQmAAAAADIo-noI5E8GFpHJ92UW-HO8vz1L
